@@ -18,7 +18,7 @@ public class Vehicle {
     }
 
     void car(){
-        System.out.println("Criando um carro com interface: "+ color+ " motor: "+ engine );
+        System.out.println("Criando um carro com interface: "+ color +" "+ engine );
         startVehicle();
     }
 
