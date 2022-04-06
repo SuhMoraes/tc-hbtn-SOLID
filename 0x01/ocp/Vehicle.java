@@ -12,8 +12,13 @@ public class Vehicle {
         this.seats = seats;
     }
 
+    public Vehicle(String color, double engine) {
+        this.color = color;
+        this.engine = engine;
+    }
+
     void car(){
-        System.out.println("Criando um carro: "+ color + " ano: " + year+ " motor: "+ engine + " com " + seats + " assentos");
+        System.out.println("Criando um carro com interface: "+ color+ " motor: "+ engine );
         startVehicle();
     }
 
@@ -23,6 +28,6 @@ public class Vehicle {
     }
 
     void startVehicle(){
-        System.out.println("Ligando os motores");
+        System.out.println("Ligando os motores com interface");
     }
 }
