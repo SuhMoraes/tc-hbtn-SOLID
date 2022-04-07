@@ -1,4 +1,4 @@
-public class Car implements IMotorVehicle, IVehicleCar, IVehicle{
+public class Car implements  IVehicle, IMotorVehicle, IVehicleCar{
     @Override
     public void configureCar(String color, String year, double engine, int seats) {
 
