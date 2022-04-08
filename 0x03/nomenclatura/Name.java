@@ -20,13 +20,13 @@ public class Name {
         public URL url;
 
         // Claase possui nomes próprios, funções devem ter verbos
-        //A
-        public class TableRepresenter {};
-        public void saveCar(){};
+        //B
+        public class TableRepresent{};
+        public void car(){};
 
         // Uma palavra por conceito
-        //B
-        public saveUser(){}; createAccount(){}; generateContract(){};
+        //A
+        public saveUser(){}; saveAccount(){}; saveContract(){};
 
 
         //Use constants, enums instead of magic numbers, abbreviations
