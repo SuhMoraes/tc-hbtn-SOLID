@@ -1,4 +1,4 @@
-public class function {
+public class Functions {
     // Faça somente 1 coisa
     //B
     public void saveIncome(Income income){
