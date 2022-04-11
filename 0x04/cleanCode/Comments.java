@@ -1,5 +1,7 @@
 public class Comments {
 
+    // Copyright (C) 2022 by CleanCode.
+    // Released under the terms of the GNU General Public License version 2 or later.
     public Owner getTestcaseOwner(Testcase testcase){};
 
     public Hours getHoursInQuarter(){};
