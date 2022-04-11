@@ -16,12 +16,11 @@ public class Error {
 
 
     // Exceções com contexto
-    //A
+    // B
     public void validate(String id){
         if(ownerRepo.count(id) == 0){
-            throw new ValidationException("ocorreu uma exceção ...")
+            throw new ValidationException("id: " + id + " não foi informado, deveria ser informado...")
         }
-    }
 
 
     // Não retorne nulle não passe null
@@ -30,7 +29,7 @@ public class Error {
 
         try {
             loadUser(user.getId());
-            throw new UserExistsException(user.getId())
+            throw new UserExistsException(user.getId());
         }
         catch (UserNotFoundException exception){
             // detail here
