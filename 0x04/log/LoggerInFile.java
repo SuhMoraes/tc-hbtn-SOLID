@@ -12,19 +12,21 @@ public class LoggerInFile {
 
     public static void main(String[] args) {
 
-        Logger logger = Logger.getLogger("MyLog");
+        public static void main(String[] args) throws IOException {
 
-        FileHandler fileHandler = new FileHandler("logs.txt");
+            Logger logger = Logger.getLogger("MyLog");
 
-        Logger.addHandler(fileHandler);
+            FileHandler fileHandler = new FileHandler("logs.txt");
 
-        SimpleFormatter simpleFormatter = new SimpleFormatter();
+            logger.addHandler(fileHandler);
 
-        fileHandler.setFormatter(simpleFormatter);
+            SimpleFormatter simpleFormatter = new SimpleFormatter();
 
-        Logger.info("Log test");
+            fileHandler.setFormatter(simpleFormatter);
 
-        Logger.info("Hi In the main class test");
+            logger.info("Log test");
+
+            logger.info("Hi In the main class test");
 
     }
 
